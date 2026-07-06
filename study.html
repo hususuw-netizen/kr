@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>?摮芋撘?/title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div class="brand">
+          <h1>?摮芋撘?/h1>
+          <p id="study-now"></p>
+        </div>
+        <nav class="nav">
+          <a href="write.html">?啣神?桀???/a>
+          <a class="active" href="study.html">?摮芋撘?/a>
+          <a class="daily-link" href="daily.html">?冽?璅∪?</a>
+        </nav>
+      </header>
+
+      <section class="panel study-card">
+        <div class="pill">蝚?<span id="current-index">0</span> / <span id="study-total-inline">0</span> 撘?/div>
+        <div id="study-word" class="hero-word">?撱箇??桀???/div>
+        <div id="study-answer" class="meaning" hidden></div>
+        <div id="study-example" class="hint"></div>
+        <div id="study-memo" class="hint"></div>
+        <div class="divider"></div>
+        <div class="actions">
+          <button id="toggle-answer" class="primary toggle-answer" type="button" aria-pressed="false">蝑?嚗?</button>
+          <button id="prev-card" class="secondary" type="button">銝?撘?/button>
+          <button id="next-card" class="secondary" type="button">銝?撘?/button>
+          <button id="study-speak" class="ghost icon-button" type="button" aria-label="隤?剜" title="隤?剜">
+            <svg class="icon-volume" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M11 5 6 9H3v6h3l5 4z"></path>
+              <path d="M15.5 8.5a5 5 0 0 1 0 7"></path>
+              <path d="M18.5 5.5a9 9 0 0 1 0 13"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="actions">
+          <a id="study-papago-translate" class="button-link ghost" href="https://papago.naver.com/" target="_blank" rel="noreferrer">Papago 蝧餉陌</a>
+        </div>
+        <div id="study-status" class="status"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
