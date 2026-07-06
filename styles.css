@@ -266,6 +266,12 @@ button.ghost,
   border: 1px solid var(--line);
 }
 
+button:disabled,
+.button-link[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 button.danger {
   background: rgba(179, 74, 55, 0.12);
   color: var(--danger);

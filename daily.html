@@ -3,54 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>瘥?冽?璅∪?</title>
+    <title>每日隨機模式</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="daily-page">
     <main class="shell">
       <header class="topbar">
         <div class="brand">
-          <h1>瘥?冽?璅∪?</h1>
-          <p id="daily-now">?曉??</p>
+          <h1>每日隨機模式</h1>
+          <p id="daily-now"></p>
         </div>
         <nav class="nav">
-          <a href="write.html">?啣神?桀???/a>
-          <a href="study.html">?摮芋撘?/a>
-          <a class="active daily-link" href="daily.html">?冽?璅∪?</a>
+          <a href="write.html">新增單字卡</a>
+          <a href="study.html">背單字模式</a>
+          <a class="active daily-link" href="daily.html">每日隨機模式</a>
         </nav>
       </header>
 
       <section class="panel study-card daily-panel">
-        <div class="pill daily-pill">隞蝚?<span id="daily-current-index">0</span> / <span id="daily-total-inline">0</span> 憿?/div>
-        <div id="daily-word" class="hero-word">??憪脣隞 20 憿?/div>
+        <div class="pill daily-pill">今日第 <span id="daily-current-index">0</span> / <span id="daily-total-inline">0</span> 題</div>
+        <div id="daily-word" class="hero-word">按開始進入今日 20 題</div>
         <div id="daily-answer" class="meaning" hidden></div>
         <div id="daily-example" class="hint"></div>
         <div id="daily-memo" class="hint"></div>
         <div class="divider"></div>
         <div class="actions">
-          <button id="daily-start" class="primary daily-start" type="button">??</button>
-          <button id="daily-end" class="ghost daily-end" type="button" hidden>蝯?</button>
-          <button id="daily-toggle-answer" class="primary toggle-answer daily-toggle" type="button" aria-pressed="false" hidden>蝑?嚗?</button>
-          <button id="daily-remember" class="daily-remember" type="button" hidden>閮?</button>
-          <button id="daily-forgot" class="daily-forgot" type="button" hidden>?芾?敺?/button>
+          <button id="daily-start" class="primary daily-start" type="button">開始</button>
+          <button id="daily-end" class="ghost daily-end" type="button" hidden>結束</button>
+          <button id="daily-toggle-answer" class="primary toggle-answer daily-toggle" type="button" aria-pressed="false" hidden>答案：關</button>
+          <button id="daily-remember" class="daily-remember" type="button" hidden>記得</button>
+          <button id="daily-forgot" class="daily-forgot" type="button" hidden>未記得</button>
         </div>
+
         <section id="daily-summary" class="daily-summary" hidden>
-          <h2>隞蝯望</h2>
+          <h2>今日統整</h2>
           <div class="stats">
             <div class="stat">
-              <span>閮?</span>
+              <span>記得</span>
               <strong id="daily-summary-remembered">0</strong>
             </div>
             <div class="stat">
-              <span>?芾?敺?/span>
+              <span>未記得</span>
               <strong id="daily-summary-forgot">0</strong>
             </div>
           </div>
           <div class="actions">
-            <button id="daily-back-to-start" class="daily-end" type="button">?????/button>
-            <button id="daily-new-mode" class="daily-start" type="button">?祈憚?葫</button>
+            <button id="daily-back-to-start" class="daily-end" type="button">回到開始頁</button>
+            <button id="daily-new-mode" class="daily-start" type="button">本輪重測</button>
           </div>
         </section>
+
         <div id="daily-status" class="status"></div>
       </section>
     </main>
