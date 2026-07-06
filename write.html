@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>?啣神?桀???/title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div class="brand">
+          <h1>???桀??∪極雿</h1>
+          <p id="write-now"></p>
+        </div>
+        <nav class="nav">
+          <a class="active" href="write.html">?啣神?桀???/a>
+          <a href="study.html">?摮芋撘?/a>
+          <a class="daily-link" href="daily.html">?冽?璅∪?</a>
+        </nav>
+      </header>
+
+      <section class="layout">
+        <section class="panel">
+          <h2>?啣??桀???/h2>
+          <form id="card-form" class="stack">
+            <div class="field">
+              <label for="korean">???桀?</label>
+              <input id="korean" name="korean" placeholder="?? ??" required />
+            </div>
+            <div class="field">
+              <div class="meaning-header">
+                <label>銝剜???/label>
+                <button id="add-meaning" class="ghost meaning-add" type="button" aria-label="?啣??游???>+"</button>
+              </div>
+              <div id="meaning-list" class="meaning-list"></div>
+            </div>
+            <div class="field">
+              <label>閰?/label>
+              <div class="pos-picker" id="pos-picker">
+                <button class="pos-option active" type="button" data-value="X">X</button>
+                <button class="pos-option" type="button" data-value="n.">n.</button>
+                <button class="pos-option" type="button" data-value="v.">v.</button>
+                <button class="pos-option" type="button" data-value="adj.">adj.</button>
+                <button class="pos-option" type="button" data-value="adv.">adv.</button>
+              </div>
+              <input id="part-of-speech" name="partOfSpeech" type="hidden" value="X" />
+            </div>
+            <div class="actions">
+              <button id="google-meaning" class="ghost" type="button">Google ?芸?蝧餉陌?啁洵銝?葉????/button>
+            </div>
+            <div class="field">
+              <label for="example">靘</label>
+              <textarea id="example" name="example" placeholder="靘????????穈???"></textarea>
+            </div>
+            <div class="field">
+              <label for="memo">?酉</label>
+              <textarea id="memo" name="memo" placeholder="?臭誑撖怨??扼??嗆????牧??>"></textarea>
+            </div>
+            <div class="actions">
+              <button class="primary" type="submit">?脣??桀???/button>
+            </div>
+            <div id="write-status" class="status"></div>
+          </form>
+        </section>
+
+        <aside class="panel">
+          <h2>摮貊?蝯梯?</h2>
+          <div class="stack">
+            <div class="stats stats-four">
+              <div class="stat">
+                <span>蝮賢摮</span>
+                <strong id="total-count">0</strong>
+              </div>
+              <div class="stat">
+                <span>?擃?活??/span>
+                <strong id="max-views-write">0</strong>
+              </div>
+              <div class="stat daily-stat">
+                <span>隞?冽?撌脰?</span>
+                <strong id="today-daily-studied">0</strong>
+              </div>
+            </div>
+            <div class="field">
+              <label for="search">???桀???/label>
+              <input id="search" placeholder="頛詨???葉?????交??酉" />
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="panel" style="margin-top: 20px;">
+        <div class="toolbar">
+          <h2>撌脣遣蝡??桀???/h2>
+          <a class="button-link ghost" href="study.html">???啗??桀?璅∪?</a>
+        </div>
+        <div id="card-list" class="list"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
